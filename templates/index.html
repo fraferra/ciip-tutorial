@@ -1,0 +1,6 @@
+<form action=""><p>Search: <input type="text" name="q"></p></form><br>
+
+
+{% for gif in gifs %}
+<img src="{{gif['images']['fixed_width']['url']}}">
+{% endfor %}
